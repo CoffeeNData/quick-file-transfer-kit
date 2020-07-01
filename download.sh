@@ -1,12 +1,12 @@
 #! /bin/bash
 # --------------- INFO ---------------
 #
-# download module: Exfiltrate files from a remote machine to this one
+# download.sh script: Exfiltrate files from a remote machine to this one
 #
 # --------------- CODE ---------------
 
 # Checks if no arguments are given
-if [ -z "$1" || -z "$2" ]; then
+if [ $# != 2 ]; then
         echo "Usage: download <file to download> <port to use>"
         exit
 fi

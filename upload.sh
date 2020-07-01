@@ -1,12 +1,12 @@
 #! /bin/bash
 # --------------- INFO ---------------
 #
-# Upload.sh module: Infiltrate files from this machine to a remote one
+# upload.sh script: Infiltrate files from this machine to a remote one
 #
 # --------------- CODE ---------------
 
 # Checks if no arguments are given
-if [ -z "$1" || -z "$2" ]; then
+if [ $# != 2 ]; then
         echo "Usage: upload <file to upload> <port to use>"
         exit
 fi
